@@ -20,19 +20,47 @@ if (querJogar) {
     alert("Boa Sorte, " + nomeJogador);
 
     const numeroSecreto = 7;
-
+  
     let numeroDigitado = prompt("Digite um número: ");
-
+    numeroDigitado = Number(numeroDigitado);
+  
+    while(numeroDigitado != numeroSecreto){
     
+
+
+    if( numeroDigitado <1 || numeroDigitado >10 || isNaN(numeroDigitado)){
+        alert("Número inválido! Digite de 1 e 10.")
+    }
         
-    if(numeroDigitado == numeroSecreto){
-        alert("Acertou!");
-    }  else if(numeroDigitado > numeroSecreto){
-        alert("Maior.");
+
+       else if(numeroDigitado > numeroSecreto){
+        alert("Número digitado maior que o secreto.");
     }  else if(numeroDigitado < numeroSecreto){
-        alert("Menor.");
+        alert("Número digitado menor que o secreto.");
     } 
+
+ numeroDigitado = prompt("Digite um número: ");
+    }
+    alert("acertou!")
 
 } else {
     alert("Que pena! Até a próxima");
 }
+
+
+// -----------------correção
+//let acertou = false;
+//while (acertou === false)    ouu while(!acertou)
+//let numeroDigitado = prompt("Digite um número: ");
+//numeroDigitado = Number(numeroDigitado);
+// if( numeroDigitado <1 || numeroDigitado >10 || isNaN(numeroDigitado)){
+//        alert("Número inválido! Digite de 1 e 10.")
+//   }
+//       
+//
+//      else if(numeroDigitado > numeroSecreto){
+//alert("Número digitado maior que o secreto.");
+//  }  else if(numeroDigitado < numeroSecreto){
+// alert("Número digitado menor que o secreto.");
+//  } 
+// numeroDigitado = prompt("Digite um número: ");
