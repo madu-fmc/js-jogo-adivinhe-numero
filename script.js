@@ -65,6 +65,8 @@
 //  } 
 // numeroDigitado = prompt("Digite um número: ");
 ////////////////////////////////////// --------25/11--------
+let nome = prompt("Digite seu nome: ");
+boaSorte(nome);
 let numeroSecreto = 7; 
 let numeroDigitado = prompt("Digite um número");
 numeroDigitado = Number(numeroDigitado);

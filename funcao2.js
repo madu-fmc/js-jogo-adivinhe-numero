@@ -20,6 +20,9 @@ function jogarAdivinhacao(numeroDigitado, numeroSecreto) {
   }
 }
 
+function boaSorte(nome){
+    alert("Boa sorte " + nome + "!")
+}
 
 //function checarNumero(numeroDigitado, numeroSecreto) {
 
